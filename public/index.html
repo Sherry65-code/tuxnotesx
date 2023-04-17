@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Start -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS End -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tux Notes</title>
+    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+  <body lang="en-uk">
+    <!-- Login Screen Start -->
+    <div id="login">
+     <div id="logindialog">
+      <h2>Sign In</h2>
+      <span class="formup">Email</span><br>
+      <input id="email" placeholder="Type email here" type="email" class="forminput"><br><br>
+      <span  class="formup">Password</span><br>
+      <input id="password" placeholder="Type a strong password" type="password" class="forminput"><br><br>
+      <button id="submit" onclick="createAccount()" role="button" class="submit">
+        <img src="./images/load.gif" alt="" id="load">
+        Sign in</button>
+     </div>
+    </div>
+    <!-- Login Screen End -->
+    <div id="alert">Test Me</div>
+    <div id="header">
+      <img src="" alt="" class="ico"><span class="trademark">TuxNotes</span>
+    </div>
+    <div id="main">
+
+    </div>
+
+    <!-- Script Imports -->
+      <script defer src="./js/script.js"></script>
+    <!-- Script Imports End -->
+  </body>
+</html>

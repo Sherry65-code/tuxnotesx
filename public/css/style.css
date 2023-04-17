@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'mukta6';
+    src: url('../fonts/Mukta-Bold.ttf');
+}
+@font-face {
+    font-family: 'mukta5';
+    src: url('../fonts/Mukta-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'mukta4';
+    src: url('../fonts/Mukta-Regular.ttf');
+}
+@font-face {
+    font-family: 'mukta3';
+    src: url('../fonts/Mukta-Light.ttf');
+}
+@font-face {
+    font-family: 'mukta2';
+    src: url('../fonts/Mukta-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'mukta7';
+    src: url('../fonts/Mukta-ExtraBold.ttf');
+}
+
+body{
+    overflow: hidden;
+    background: linear-gradient(145deg, rgb(0, 0, 0), rgb(54, 54, 54));
+    background-attachment: fixed;
+}
+
+#login{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#logindialog{
+    width: 34%;
+    min-width: 260px;
+    height: 310px;
+    background-color: #00000070;
+    border-radius: 9px;
+    border: 1px rgba(255, 255, 255, 0.103) groove;
+    padding: 0 20px;
+    font-family: 'mukta4';
+    color: rgb(10, 10, 10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    color: aliceblue;
+}
+.formup{
+    font-family: 'mukta4';
+    font-size: 16px;
+}
+.forminput{
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    padding: 5px;
+    font-family: 'mukta4';
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding-inline-start: 0.6rem;
+    color: rgb(255, 255, 255);
+}
+
+.forminput:hover{
+    border: 2px solid rgba(182, 182, 182, 0.507);
+}
+.forminput:focus{
+    outline: none;
+    border: 2px solid rgba(238, 238, 238, 0.801);
+}
+.submit{
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 5px 13px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: 'mukta5';
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 4px;
+    /* border-bottom: 1px groove var(--accent-color-darkeer); */
+}
+.submit:hover{
+    filter: brightness(0.8);
+}
+.submit:focus{
+    outline: 1px solid rgb(83, 83, 83);
+}
+*::selection{
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+}
+.submit{
+    display: block;
+}
+button #load{
+    height: 1rem;
+    display: none;
+}
+#alert{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'mukta4';
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20px;
+    border: 1px groove rgb(44, 44, 44);
+    text-align: center;
+    border-radius: 28px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-100vh);
+    z-index: 1000;
+}
+#header{
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    font-family: 'mukta5';
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    
+}
+.trademark{
+    background: linear-gradient(to right,rgb(255, 217, 0), rgb(255, 255, 255));
+    /* text-shadow: 0px 2px black; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
